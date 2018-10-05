@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="com.walinns.walinnshybrid"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>walinnshybridapi</name>
+    <js-module name="walinnshybridapi" src="www/walinnshybridapi.js">
+        <clobbers target="cordova.plugins.walinnshybridapi" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="walinnshybridapi">
+                <param name="android-package" value="com.walinns.walinnshybrid.walinnshybridapi" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/walinnshybridapi.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/APIClient.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/InAppNotification.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/ManifestMetaData.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/NotificationUtils.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/UserProfile.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAConfig.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WADeviceInfo.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAFCMManager.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAInstallRefferer.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAInstanceIDListenerService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAInstanceIDService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAIntentService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WALifeCycle.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WalinnsAPI.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WalinnsAPIClient.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAListenerService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WALog.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAMessingService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAPref.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAProfile.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAService.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAUtils.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WAWorkerThread.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+
+        <source-file src="src/android/WTLog.java"
+            target-dir="src/com/walinns/walinnshybrid/walinnshybridapi" />
+    </platform>
+</plugin>

@@ -1,0 +1,25 @@
+{
+  "name": "com.walinns.walinnshybrid",
+  "version": "1.0.0",
+  "description": "Walinns analytics SDK for mobile application",
+  "cordova": {
+    "id": "com.walinns.walinnshybrid",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppBloomer/HybridSdk.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Walinns",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AppBloomer/HybridSdk/issues"
+  },
+  "homepage": "https://github.com/AppBloomer/HybridSdk#readme"
+}
