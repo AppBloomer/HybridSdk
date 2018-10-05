@@ -6,6 +6,7 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import com.walinns.walinnshybrid.WalinnsAPI;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -29,4 +30,21 @@ public class walinnshybridapi extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
+     private void trackEvent(String message, CallbackContext callbackContext) {
+       if (message != null && message.length() > 0) {
+           callbackContext.success(message);
+           WalinnsAPI.getInstance().track("button", "Email button clicked");
+       } else {
+           callbackContext.error("Expected one non-empty string argument.");
+       }
+   }
+
+   private void trackScreen(String message, CallbackContext callbackContext) {
+       if (message != null && message.length() > 0) {
+           callbackContext.success(message);
+           WalinnsAPI.getInstance().track(message);
+       } else {
+           callbackContext.error("Expected one non-empty string argument.");
+       }
+   }
 }
